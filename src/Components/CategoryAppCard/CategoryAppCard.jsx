@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 const CategoryAppCard = () => {
   return (
-    <div className="flex gap-[13px] bg-[#39455f62] rounded-[8px] px-[15px] py-[10px] items-center">
+    <div className="flex gap-[13px] bg-[#39455f6d] rounded-[8px] px-[15px] py-[10px] items-center">
       <div>
         <img
           className="bg-white w-[123px] rounded-[8px]"
