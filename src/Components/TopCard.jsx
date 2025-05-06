@@ -1,18 +1,19 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const TopCard = ({ item }) => {
+  const navigate = useNavigate();
   return (
     <div
+      onClick={() => navigate(`app/${item.id}`)}
       style={{
         backgroundImage: `linear-gradient(-300deg, rgba(10, 10, 10,.80) 0%, rgba(17, 17, 17, 0.00) 100%), url('https://r4.wallpaperflare.com/wallpaper/214/187/691/video-games-video-game-art-ultrawide-ultra-wide-need-for-speed-heat-hd-wallpaper-dfd5229ceea65cbbc5ec4882f161d4f4.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
       className="h-full rounded-[10px] p-[20px] pb-[10px] flex flex-col justify-end space-y-[5px]">
-      <p className="max-w-[90px] text-[#CDD0D4] font-bold">
-        Ashpalt 9 : Legends
-      </p>
+      <p className=" text-[#CDD0D4] font-bold">{item.name}</p>
       <div className="flex items-center gap-1 text-orange-400 mt-[5px]">
         {Array.from({ length: 5 }, (_, i) => (
           <FaStar

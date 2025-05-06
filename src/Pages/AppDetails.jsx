@@ -1,14 +1,20 @@
 import React, { useState } from "react";
-import { useLoaderData } from "react-router";
+import { Navigate, useLoaderData, useParams } from "react-router";
 import { FaDownload, FaStar } from "react-icons/fa";
 
 const AppDetails = () => {
   const data = useLoaderData();
-  const [app] = data;
-  // console.log(app);
+  const { id } = useParams();
+  // const [app] = data;
+  // console.log(id);
+
+  const app = data.find((item) => item.id === id);
 
   const [review, setReview] = useState("");
   const [rating, setRating] = useState(1); // default rating
+  const [userReview, setUserReview] = useState([]);
+  const [install, setInstall] = useState(false);
+  const [canReview, setCanReview] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault;
@@ -16,12 +22,30 @@ const AppDetails = () => {
     if (review.trim() !== "") {
       document.getElementById("my_modal_5").close();
       console.log(review, rating);
+      const obj = {
+        rating,
+        review,
+      };
+      setUserReview([...userReview, obj]);
       setReview("");
       setRating(1);
+      console.log(userReview);
     } else {
       alert("please write your comment");
     }
   };
+
+  const handleReview = () => {
+    if (canReview) {
+      document.getElementById("my_modal_5").showModal();
+    } else {
+      alert("Install the app first");
+    }
+  };
+
+  if (!app) {
+    return <Navigate to="/appNotFound"></Navigate>;
+  }
 
   // console.log(name);
   return (
@@ -51,10 +75,17 @@ const AppDetails = () => {
         <div className="ml-auto flex gap-2">
           <button
             className="btn btn-secondary text-gray-300"
-            onClick={() => document.getElementById("my_modal_5").showModal()}>
+            onClick={handleReview}>
             add review
           </button>
-          <button className="btn btn-primary">Install</button>
+          <button
+            onClick={() => {
+              setInstall(!install);
+              setCanReview(true);
+            }}
+            className="btn btn-primary">
+            {install ? "Uninstall" : "Install"}
+          </button>
         </div>
       </div>
 
@@ -102,7 +133,7 @@ const AppDetails = () => {
         <h3 className="text-xl font-semibold">User Reviews</h3>
         <div className="space-y-4">
           {app.reviews.map((review, index) => (
-            <div key={index} className="p-4 bg-base-200 rounded-xl">
+            <div key={index} className="p-4 bg-[#39455f6d] rounded-xl">
               <p className="font-semibold"> User : {review.user}</p>
               <p className="text-yellow-400 flex items-center">
                 Rating : &nbsp;
@@ -113,6 +144,24 @@ const AppDetails = () => {
           ))}
         </div>
       </div>
+      {/* User revies */}
+
+      {userReview.length > 0 && (
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold">Your Reviews</h3>
+          <div className="space-y-4">
+            {userReview.map((review, index) => (
+              <div key={index} className="p-4 bg-[#39455f6d] rounded-xl">
+                <p className="text-yellow-400 flex items-center">
+                  Rating : &nbsp;
+                  <FaStar className="inline mr-1" /> {review.rating}
+                </p>
+                <p className="text-gray-300">Comment : {review.review}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Open the modal using document.getElementById('ID').showModal() method */}
 

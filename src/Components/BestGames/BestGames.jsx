@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const BestGames = ({ games }) => {
   const [topGames, setTopGames] = useState(games);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const Games = [...games].sort((a, b) => b.rating - a.rating).slice(0, 6);
@@ -16,6 +18,7 @@ const BestGames = ({ games }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6  gap-[15px]">
         {topGames.map((item) => (
           <div
+            onClick={() => navigate(`app/${item.id}`)}
             key={item.id}
             style={{
               backgroundImage: `linear-gradient(-300deg, rgba(10, 10, 10,.80) 0%, rgba(17, 17, 17, 0.00) 100%), url('https://r4.wallpaperflare.com/wallpaper/214/187/691/video-games-video-game-art-ultrawide-ultra-wide-need-for-speed-heat-hd-wallpaper-dfd5229ceea65cbbc5ec4882f161d4f4.jpg')`,
@@ -23,8 +26,8 @@ const BestGames = ({ games }) => {
               backgroundPosition: "center",
             }}
             className="h-[300px] rounded-[10px] p-[20px] pb-[10px] flex flex-col justify-end space-y-[5px]">
-            <p className="max-w-[90px] text-[#CDD0D4] font-bold">
-              Ashpalt 9 : Legends
+            <p className="max-w-[102px] text-[#CDD0D4] font-bold">
+              {item.name}
             </p>
             <div className="flex items-center gap-1 text-orange-400 mt-[5px]">
               {Array.from({ length: 5 }, (_, i) => (

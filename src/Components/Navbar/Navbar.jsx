@@ -18,12 +18,12 @@ const Navbar = () => {
       <li className="w-20">
         <NavLink
           className={({ isActive }) =>
-            `hover:bg-transparent mx-auto text-base ${
+            `hover:bg-transparent  mx-auto text-base ${
               isActive ? "text-[#818CF8] font-bold" : ""
             }`
           }
-          to="/installedApps">
-          Installed
+          to="/profile">
+          Profile
         </NavLink>
       </li>
       <li className="w-20">
@@ -33,15 +33,15 @@ const Navbar = () => {
               isActive ? "text-[#818CF8] font-bold" : ""
             }`
           }
-          to="/profile">
-          Profile
+          to="/aboutUs">
+          AboutUs
         </NavLink>
       </li>
     </>
   );
   return (
     <div className="sticky top-0 z-10 backdrop-blur-md shadow-sm shadow-primary">
-      <div className="navbar bg-transparent   mb-[50px]  w-11/12 mx-auto">
+      <div className="navbar bg-transparent  max-w-[1200px]  mb-[50px]  w-11/12 mx-auto px-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

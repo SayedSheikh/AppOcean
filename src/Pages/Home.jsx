@@ -12,19 +12,27 @@ const Home = () => {
   const data = useLoaderData();
   console.log(data);
   const [games, setGames] = useState([]);
+  const [healthApps, setHealthApps] = useState([]);
+  const [productivityApps, setProductivityApps] = useState([]);
+  const [educationApps, setEducationApps] = useState([]);
 
   useEffect(() => {
     const gamesData = data.filter((item) => item.category === "Games");
     setGames(gamesData);
+    setHealthApps(data.filter((item) => item.category === "Health"));
+    setProductivityApps(
+      data.filter((item) => item.category === "Productivity")
+    );
+    setEducationApps(data.filter((item) => item.category === "Education"));
   }, [data]);
   return (
     <div className="min-h-[calc(100vh-65px)] z-0">
       <Slider></Slider>
       <BestGames games={games}></BestGames>
       <TopApps apps={data}></TopApps>
-      <HealthApps></HealthApps>
-      <ProductivityApps></ProductivityApps>
-      <EducationApps></EducationApps>
+      <HealthApps apps={healthApps}></HealthApps>
+      <ProductivityApps apps={productivityApps}></ProductivityApps>
+      <EducationApps apps={educationApps}></EducationApps>
       <Information></Information>
     </div>
   );
