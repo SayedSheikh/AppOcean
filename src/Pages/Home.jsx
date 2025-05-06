@@ -6,6 +6,7 @@ import TopApps from "../Components/TopApps/TopApps";
 import HealthApps from "../Components/HealthApps/HealthApps";
 import ProductivityApps from "../Components/ProductivityApps/ProductivityApps";
 import EducationApps from "../Components/EducationApps/EducationApps";
+import Information from "../Components/Information/Information";
 
 const Home = () => {
   const data = useLoaderData();
@@ -24,6 +25,7 @@ const Home = () => {
       <HealthApps></HealthApps>
       <ProductivityApps></ProductivityApps>
       <EducationApps></EducationApps>
+      <Information></Information>
     </div>
   );
 };
