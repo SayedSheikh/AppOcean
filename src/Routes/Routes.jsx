@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import MainLayout from "../Layouts/MainLayout";
 import Error from "../Error/Error";
 import Home from "../Pages/Home";
+import AppDetails from "../Pages/AppDetails";
 
 const router = createBrowserRouter([
   {
@@ -15,9 +16,11 @@ const router = createBrowserRouter([
         Component: Home,
         hydrateFallbackElement: <p>loading...</p>,
       },
+
       {
         path: "installedApps",
-        element: <p>This is Installed apps</p>,
+        loader: () => fetch("/data.json"),
+        Component: AppDetails,
       },
       {
         path: "profile",

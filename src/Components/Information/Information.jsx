@@ -17,7 +17,7 @@ const Information = () => {
         a click.
       </p>
       <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-[24px] justify-center">
-        <div className="py-[40px] px-[48px] bg-[#7693d2aa] flex flex-col rounded-[16px]">
+        <div className="py-[40px] px-[48px] bg-[#4b6ebc84] flex flex-col rounded-[16px]">
           {/* <img className="w-[64px]" src={reviewImg} alt="" /> */}
           <PiDownloadSimpleBold size={50} className="text-primary" />
           <h1 className="text-[44px] lg:text-[52px] font-extrabold text-[#fff]">
@@ -27,7 +27,7 @@ const Information = () => {
             Total Downloads
           </p>
         </div>
-        <div className="py-[40px] px-[48px] bg-[#7693d2aa] flex flex-col rounded-[16px]">
+        <div className="py-[40px] px-[48px] bg-[#4b6ebc84] flex flex-col rounded-[16px]">
           <img className="w-[64px]" src={reviewImg} alt="" />
           <h1 className="text-[44px] lg:text-[52px] font-extrabold text-[#ffffff]">
             <CountUp duration={5} end={467} enableScrollSpy></CountUp>+
@@ -36,14 +36,14 @@ const Information = () => {
             Total Reviews
           </p>
         </div>
-        <div className="py-[40px] px-[48px] bg-[#7693d2aa] flex flex-col rounded-[16px]">
+        <div className="py-[40px] px-[48px] bg-[#4b6ebc84] flex flex-col rounded-[16px]">
           <img className="w-[64px]" src={UserImg} alt="" />
           <h1 className="text-[44px] lg:text-[52px] font-extrabold text-[#fff]">
             <CountUp duration={5} end={1900} enableScrollSpy></CountUp>+
           </h1>
           <p className="text-[#CDD0D4] text-[24px] font-semibold">Users</p>
         </div>
-        <div className="py-[40px] px-[48px] bg-[#7693d2aa] flex flex-col rounded-[16px]">
+        <div className="py-[40px] px-[48px] bg-[#4b6ebc84] flex flex-col rounded-[16px]">
           <FaAppStore size={60} className="text-[#818CF8]" />
           <h1 className="text-[44px] lg:text-[52px] font-extrabold text-[#fff]">
             <CountUp duration={5} end={300} enableScrollSpy></CountUp>+
