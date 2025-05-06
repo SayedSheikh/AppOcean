@@ -1,0 +1,9 @@
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+}
+
+.swiper-pagination-bullet {
+  background-color: gainsboro;
+  width: 20px;
+  height: 2px;
+  border-radius: 5px;
+}

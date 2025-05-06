@@ -1,0 +1,580 @@
+[
+  {
+    "id": "game001",
+    "name": "Asphalt 9: Legends",
+    "developer": "Gameloft",
+    "thumbnail": "https://i.ibb.co/2k6bq1T/asphalt9-thumb.jpg",
+    "banner": "https://i.ibb.co/YTRKfj4/asphalt9-banner.jpg",
+    "downloads": 100000000,
+    "category": "Games",
+    "rating": 4.5,
+    "description": "Asphalt 9: Legends features a top roster of real hypercars for you to drive that is unlike that found in any other game.",
+    "features": [
+      "Real hypercars from top brands",
+      "Stunning graphics",
+      "Multiplayer mode"
+    ],
+    "reviews": [
+      {
+        "user": "speedster99",
+        "rating": 5,
+        "comment": "Amazing graphics and gameplay!"
+      }
+    ]
+  },
+  {
+    "id": "game002",
+    "name": "Roblox",
+    "developer": "Roblox Corporation",
+    "thumbnail": "https://i.ibb.co/fqfCk2v/roblox-thumb.jpg",
+    "banner": "https://i.ibb.co/vjb2mr0/roblox-banner.jpg",
+    "downloads": 500000000,
+    "category": "Games",
+    "rating": 4.4,
+    "description": "Roblox lets you create, share experiences, and be anything you can imagine.",
+    "features": [
+      "User-created games",
+      "Social interactions",
+      "Virtual economy"
+    ],
+    "reviews": [
+      {
+        "user": "builderkid",
+        "rating": 4,
+        "comment": "So creative and fun!"
+      }
+    ]
+  },
+  {
+    "id": "game003",
+    "name": "Candy Crush Saga",
+    "developer": "King",
+    "thumbnail": "https://i.ibb.co/3CxdXBy/candycrush-thumb.jpg",
+    "banner": "https://i.ibb.co/YTq9Bbb/candycrush-banner.jpg",
+    "downloads": 1000000000,
+    "category": "Games",
+    "rating": 4.6,
+    "description": "Switch and match Candies in this tasty puzzle adventure to progress to the next level.",
+    "features": ["Hundreds of levels", "Sweet combos", "Challenging puzzles"],
+    "reviews": [
+      {
+        "user": "sweettooth",
+        "rating": 5,
+        "comment": "Addictive and fun!"
+      }
+    ]
+  },
+  {
+    "id": "gam871",
+    "name": "Temple Run",
+    "developer": "Temple Run Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-templerun.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-templerun.jpg",
+    "downloads": 56205140,
+    "category": "Games",
+    "rating": 4.5,
+    "description": "Temple Run is a popular games app designed to improve your games experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_tem",
+        "rating": 4,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+  {
+    "id": "gam523",
+    "name": "Subway Surfers",
+    "developer": "Subway Surfers Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-subwaysurfers.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-subwaysurfers.jpg",
+    "downloads": 37001789,
+    "category": "Games",
+    "rating": 4.3,
+    "description": "Subway Surfers is a popular games app designed to improve your games experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_sub",
+        "rating": 4,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+  {
+    "id": "gam832",
+    "name": "Clash of Clans",
+    "developer": "Clash of Clans Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-clashofclans.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-clashofclans.jpg",
+    "downloads": 394319191,
+    "category": "Games",
+    "rating": 4.7,
+    "description": "Clash of Clans is a popular games app designed to improve your games experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_cla",
+        "rating": 4,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+  {
+    "id": "gam143",
+    "name": "PUBG Mobile",
+    "developer": "PUBG Mobile Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-pubgmobile.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-pubgmobile.jpg",
+    "downloads": 459223435,
+    "category": "Games",
+    "rating": 5.0,
+    "description": "PUBG Mobile is a popular games app designed to improve your games experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_pub",
+        "rating": 4,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+  {
+    "id": "gam506",
+    "name": "Free Fire",
+    "developer": "Free Fire Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-freefire.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-freefire.jpg",
+    "downloads": 434380488,
+    "category": "Games",
+    "rating": 4.6,
+    "description": "Free Fire is a popular games app designed to improve your games experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_fre",
+        "rating": 5,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+  {
+    "id": "gam152",
+    "name": "Among Us",
+    "developer": "Among Us Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-amongus.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-amongus.jpg",
+    "downloads": 210863939,
+    "category": "Games",
+    "rating": 4.6,
+    "description": "Among Us is a popular games app designed to improve your games experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_amo",
+        "rating": 4,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+  {
+    "id": "gam921",
+    "name": "Minecraft",
+    "developer": "Minecraft Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-minecraft.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-minecraft.jpg",
+    "downloads": 122576709,
+    "category": "Games",
+    "rating": 4.6,
+    "description": "Minecraft is a popular games app designed to improve your games experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_min",
+        "rating": 5,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+  {
+    "id": "pro304",
+    "name": "Notion",
+    "developer": "Notion Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-notion.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-notion.jpg",
+    "downloads": 171671903,
+    "category": "Productivity",
+    "rating": 4.6,
+    "description": "Notion is a popular productivity app designed to improve your productivity experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_not",
+        "rating": 5,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+  {
+    "id": "pro377",
+    "name": "Todoist",
+    "developer": "Todoist Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-todoist.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-todoist.jpg",
+    "downloads": 218485303,
+    "category": "Productivity",
+    "rating": 4.8,
+    "description": "Todoist is a popular productivity app designed to improve your productivity experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_tod",
+        "rating": 4,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+  {
+    "id": "pro143",
+    "name": "Trello",
+    "developer": "Trello Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-trello.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-trello.jpg",
+    "downloads": 274052946,
+    "category": "Productivity",
+    "rating": 4.5,
+    "description": "Trello is a popular productivity app designed to improve your productivity experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_tre",
+        "rating": 5,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+  {
+    "id": "pro869",
+    "name": "Evernote",
+    "developer": "Evernote Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-evernote.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-evernote.jpg",
+    "downloads": 9828922,
+    "category": "Productivity",
+    "rating": 4.9,
+    "description": "Evernote is a popular productivity app designed to improve your productivity experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_eve",
+        "rating": 5,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+  {
+    "id": "pro774",
+    "name": "Google Keep",
+    "developer": "Google Keep Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-googlekeep.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-googlekeep.jpg",
+    "downloads": 483454380,
+    "category": "Productivity",
+    "rating": 4.6,
+    "description": "Google Keep is a popular productivity app designed to improve your productivity experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_goo",
+        "rating": 5,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+  {
+    "id": "pro159",
+    "name": "Slack",
+    "developer": "Slack Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-slack.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-slack.jpg",
+    "downloads": 156600953,
+    "category": "Productivity",
+    "rating": 4.4,
+    "description": "Slack is a popular productivity app designed to improve your productivity experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_sla",
+        "rating": 5,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+  {
+    "id": "pro217",
+    "name": "Microsoft To Do",
+    "developer": "Microsoft To Do Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-microsofttodo.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-microsofttodo.jpg",
+    "downloads": 12449274,
+    "category": "Productivity",
+    "rating": 4.2,
+    "description": "Microsoft To Do is a popular productivity app designed to improve your productivity experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_mic",
+        "rating": 5,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+  {
+    "id": "hea212",
+    "name": "MyFitnessPal",
+    "developer": "MyFitnessPal Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-myfitnesspal.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-myfitnesspal.jpg",
+    "downloads": 393439890,
+    "category": "Health",
+    "rating": 4.0,
+    "description": "MyFitnessPal is a popular health app designed to improve your health experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_myf",
+        "rating": 5,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+  {
+    "id": "hea368",
+    "name": "Headspace",
+    "developer": "Headspace Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-headspace.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-headspace.jpg",
+    "downloads": 269137520,
+    "category": "Health",
+    "rating": 4.8,
+    "description": "Headspace is a popular health app designed to improve your health experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_hea",
+        "rating": 4,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+  {
+    "id": "hea458",
+    "name": "Calm",
+    "developer": "Calm Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-calm.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-calm.jpg",
+    "downloads": 270013752,
+    "category": "Health",
+    "rating": 4.6,
+    "description": "Calm is a popular health app designed to improve your health experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_cal",
+        "rating": 4,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+  {
+    "id": "hea858",
+    "name": "Samsung Health",
+    "developer": "Samsung Health Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-samsunghealth.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-samsunghealth.jpg",
+    "downloads": 426647251,
+    "category": "Health",
+    "rating": 4.7,
+    "description": "Samsung Health is a popular health app designed to improve your health experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_sam",
+        "rating": 4,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+  {
+    "id": "hea508",
+    "name": "Google Fit",
+    "developer": "Google Fit Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-googlefit.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-googlefit.jpg",
+    "downloads": 342536091,
+    "category": "Health",
+    "rating": 4.6,
+    "description": "Google Fit is a popular health app designed to improve your health experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_goo",
+        "rating": 5,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+  {
+    "id": "hea800",
+    "name": "Sleep Cycle",
+    "developer": "Sleep Cycle Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-sleepcycle.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-sleepcycle.jpg",
+    "downloads": 178293395,
+    "category": "Health",
+    "rating": 4.7,
+    "description": "Sleep Cycle is a popular health app designed to improve your health experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_sle",
+        "rating": 4,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+  {
+    "id": "hea366",
+    "name": "Strava",
+    "developer": "Strava Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-strava.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-strava.jpg",
+    "downloads": 269228643,
+    "category": "Health",
+    "rating": 4.5,
+    "description": "Strava is a popular health app designed to improve your health experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_str",
+        "rating": 4,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+  {
+    "id": "edu776",
+    "name": "Khan Academy",
+    "developer": "Khan Academy Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-khanacademy.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-khanacademy.jpg",
+    "downloads": 181069648,
+    "category": "Education",
+    "rating": 5.0,
+    "description": "Khan Academy is a popular education app designed to improve your education experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_kha",
+        "rating": 4,
+        "comment": "Great app for education!"
+      }
+    ]
+  },
+  {
+    "id": "edu178",
+    "name": "Duolingo",
+    "developer": "Duolingo Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-duolingo.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-duolingo.jpg",
+    "downloads": 11526838,
+    "category": "Education",
+    "rating": 4.4,
+    "description": "Duolingo is a popular education app designed to improve your education experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_duo",
+        "rating": 5,
+        "comment": "Great app for education!"
+      }
+    ]
+  },
+  {
+    "id": "edu509",
+    "name": "Coursera",
+    "developer": "Coursera Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-coursera.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-coursera.jpg",
+    "downloads": 173325813,
+    "category": "Education",
+    "rating": 4.1,
+    "description": "Coursera is a popular education app designed to improve your education experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_cou",
+        "rating": 4,
+        "comment": "Great app for education!"
+      }
+    ]
+  },
+  {
+    "id": "edu112",
+    "name": "Udemy",
+    "developer": "Udemy Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-udemy.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-udemy.jpg",
+    "downloads": 36242284,
+    "category": "Education",
+    "rating": 4.3,
+    "description": "Udemy is a popular education app designed to improve your education experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_ude",
+        "rating": 5,
+        "comment": "Great app for education!"
+      }
+    ]
+  },
+  {
+    "id": "edu617",
+    "name": "SoloLearn",
+    "developer": "SoloLearn Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-sololearn.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-sololearn.jpg",
+    "downloads": 309924038,
+    "category": "Education",
+    "rating": 4.1,
+    "description": "SoloLearn is a popular education app designed to improve your education experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_sol",
+        "rating": 4,
+        "comment": "Great app for education!"
+      }
+    ]
+  },
+  {
+    "id": "edu132",
+    "name": "Brilliant",
+    "developer": "Brilliant Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-brilliant.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-brilliant.jpg",
+    "downloads": 168251929,
+    "category": "Education",
+    "rating": 4.7,
+    "description": "Brilliant is a popular education app designed to improve your education experience.",
+    "features": ["Feature A", "Feature B", "Feature C"],
+    "reviews": [
+      {
+        "user": "user_bri",
+        "rating": 5,
+        "comment": "Great app for education!"
+      }
+    ]
+  }
+]

@@ -11,7 +11,9 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        loader: () => fetch("/data.json"),
         Component: Home,
+        hydrateFallbackElement: <p>loading...</p>,
       },
       {
         path: "installedApps",
