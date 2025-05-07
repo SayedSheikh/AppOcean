@@ -5,6 +5,8 @@ import Home from "../Pages/Home";
 import AppDetails from "../Pages/AppDetails";
 import AboutUs from "../Pages/AboutUs";
 import AppNotFound from "../Components/AppNotFound/AppNotFound";
+import Login from "../Pages/Login";
+import Registration from "../Pages/Registration";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "appNotFound",
         Component: AppNotFound,
+      },
+      {
+        path: "login",
+        Component: Login,
+      },
+      {
+        path: "signup",
+        Component: Registration,
       },
     ],
   },
