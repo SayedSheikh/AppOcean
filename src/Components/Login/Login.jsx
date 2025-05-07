@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Contexts/AuthContext";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const { signIn, googleSignIn } = use(AuthContext);
@@ -13,28 +14,32 @@ const Login = () => {
 
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    // console.log(email, password);
 
     setError("");
 
     signIn(email, password)
-      .then((res) => {
-        console.log(res.json);
+      .then(() => {
+        // console.log(res.json);
         navigate("/");
+        toast.success("Logged In !!");
       })
       .catch((err) => {
         setError(err.code.slice(5));
+        toast.error(err.code.slice(5));
       });
   };
 
   const handleGoogleSignIn = () => {
     googleSignIn()
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+        // console.log(res);
         navigate(location.state || "/");
+        toast.success("Logged In !!");
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
+        toast.error(err.code.slice(5));
       });
   };
   return (
@@ -61,7 +66,9 @@ const Login = () => {
             />
 
             <div>
-              <a className="link link-hover">Forgot password?</a>
+              <Link to="/forgetPassword" className="link link-hover">
+                Forgot password?
+              </Link>
             </div>
             {error && <p className="text-red-400">{error}</p>}
             <button type="submit" className="btn mt-4 mb-2">
@@ -96,7 +103,9 @@ const Login = () => {
             </button>
             <p className="text-base">
               Don't have an account?{" "}
-              <Link className="text-[#818CF8] border-b" to="/signup">
+              <Link
+                className="text-[#F471B5] font-semibold border-b"
+                to="/signup">
                 SignUp
               </Link>
             </p>

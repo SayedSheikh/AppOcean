@@ -8,6 +8,7 @@ import {
   signOut,
   GoogleAuthProvider,
   signInWithPopup,
+  sendPasswordResetEmail,
 } from "firebase/auth";
 import { auth } from "../Components/FireBase/Firebase.init";
 
@@ -35,11 +36,15 @@ const AuthProvider = ({ children }) => {
     return updateProfile(auth.currentUser, obj);
   };
 
+  const resetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
   const logout = () => {
     return signOut(auth);
   };
 
-  console.log(user);
+  // console.log(user);
   const userInfo = {
     user,
     signUp,
@@ -48,6 +53,7 @@ const AuthProvider = ({ children }) => {
     logout,
     googleSignIn,
     loading,
+    resetPassword,
   };
 
   useEffect(() => {

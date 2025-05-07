@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navigate, useLoaderData, useParams } from "react-router";
 import { FaDownload, FaStar } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const AppDetails = () => {
   const data = useLoaderData();
@@ -21,7 +22,7 @@ const AppDetails = () => {
 
     if (review.trim() !== "") {
       document.getElementById("my_modal_5").close();
-      console.log(review, rating);
+      // console.log(review, rating);
       const obj = {
         rating,
         review,
@@ -29,9 +30,11 @@ const AppDetails = () => {
       setUserReview([...userReview, obj]);
       setReview("");
       setRating(1);
-      console.log(userReview);
+      toast.success("Review Added Successfully !!");
+      // console.log(userReview);
     } else {
-      alert("please write your comment");
+      // alert("please write your comment");
+      toast.error("please write your comment");
     }
   };
 
@@ -39,7 +42,8 @@ const AppDetails = () => {
     if (canReview) {
       document.getElementById("my_modal_5").showModal();
     } else {
-      alert("Install the app first");
+      // alert("Install the app first");
+      toast.error("Install the app first");
     }
   };
 
@@ -81,6 +85,9 @@ const AppDetails = () => {
           <button
             onClick={() => {
               setInstall(!install);
+              toast.success(
+                `${install ? "Uninstall " : "Install "} Successful`
+              );
               setCanReview(true);
             }}
             className="btn btn-primary">
@@ -144,7 +151,7 @@ const AppDetails = () => {
           ))}
         </div>
       </div>
-      {/* User revies */}
+      {/* User review */}
 
       {userReview.length > 0 && (
         <div className="space-y-2">

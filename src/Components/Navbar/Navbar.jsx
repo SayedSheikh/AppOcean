@@ -1,16 +1,19 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Contexts/AuthContext";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, logout } = use(AuthContext);
   const handleLogout = () => {
     logout()
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+        // console.log(res);
+        toast.success("Logged Out !!");
       })
-      .catch((err) => {
-        console.log(err);
+      .catch(() => {
+        // console.log(err);
+        toast.error("Network Issue !!");
       });
   };
   const links = (

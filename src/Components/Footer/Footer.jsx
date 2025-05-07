@@ -4,10 +4,9 @@ const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center bg-black text-white rounded p-10">
       <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <a className="link link-hover">Apps</a>
+        <a className="link link-hover">Profile</a>
+        <a className="link link-hover">AboutUs</a>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
@@ -45,8 +44,8 @@ const Footer = () => {
       </nav>
       <aside>
         <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by ACME
-          Industries Ltd
+          Copyright © {new Date().getFullYear()} - All right reserved by
+          AppOcean
         </p>
       </aside>
     </footer>

@@ -10,6 +10,7 @@ import Registration from "../Pages/Registration";
 import Profile from "../Pages/Profile";
 import PrivateRoute from "../Pages/PrivateRoute";
 import Loader from "../Components/Loader/Loader";
+import ForgetPassword from "../Pages/ForgetPassword";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "signup",
         Component: Registration,
+      },
+      {
+        path: "forgetPassword",
+        element: <ForgetPassword></ForgetPassword>,
       },
     ],
   },

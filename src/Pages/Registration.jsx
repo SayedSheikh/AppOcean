@@ -1,11 +1,13 @@
 import React, { use, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Contexts/AuthContext";
+import toast from "react-hot-toast";
 
 const Registration = () => {
   const { signUp, updateUser, googleSignIn } = use(AuthContext);
 
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,41 +21,50 @@ const Registration = () => {
     setError("");
     if (!/[A-Z]/.test(password)) {
       setError("Password must have an upperCase letter");
+      toast.error("Password must have an upperCase letter");
       return;
     } else if (!/[a-z]/.test(password)) {
       setError("Password must have a lowerCase letter");
+      toast.error("Password must have an upperCase letter");
       return;
     } else if (!/^.{6,}$/.test(password)) {
       setError("Length must be at least 6 character");
+      toast.error("Password must have an upperCase letter");
       return;
     }
 
     signUp(email, password)
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+        // console.log(res);
         updateUser({
           displayName: name,
           photoURL: url,
         })
-          .then((res) => {
-            console.log(res);
+          .then(() => {
+            // console.log(res);
+            toast.success("Registration Successful !!");
+            navigate("/");
           })
           .catch((err) => {
             setError(err.code.slice(5));
+            toast.error(`${err.code.slice(5)} !!`);
           });
       })
       .catch((err) => {
         setError(err.code.slice(5));
+        toast.error(`${err.code.slice(5)} !!`);
       });
   };
 
   const handleGoogleSignIn = () => {
     googleSignIn()
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+        // console.log(res);
+        toast.success("Registration Successful !!");
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
+        toast.error(`${err.code.slice(5)} !!`);
       });
   };
   return (
@@ -94,9 +105,6 @@ const Registration = () => {
               required
               name="password"
             />
-            <div>
-              <a className="link link-hover">Forgot password?</a>
-            </div>
 
             {error && <p className="text-red-400">{error}</p>}
             <button type="submit" className="btn mt-4 mb-2">
@@ -132,7 +140,9 @@ const Registration = () => {
             </button>
             <p className="text-base">
               Already have an account?{" "}
-              <Link className="text-[#818CF8] border-b" to="/login">
+              <Link
+                className="text-[#F471B5] font-semibold border-b"
+                to="/login">
                 Login
               </Link>
             </p>

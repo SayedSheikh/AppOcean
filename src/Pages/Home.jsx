@@ -10,7 +10,7 @@ import Information from "../Components/Information/Information";
 
 const Home = () => {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   const [games, setGames] = useState([]);
   const [healthApps, setHealthApps] = useState([]);
   const [productivityApps, setProductivityApps] = useState([]);

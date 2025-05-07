@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { AuthContext } from "../Contexts/AuthContext";
 import { FaUserEdit } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const Profile = () => {
   const { user, updateUser } = use(AuthContext);
@@ -20,7 +21,7 @@ const Profile = () => {
 
     if (Object.keys(obj).length === 0) return;
 
-    console.log(obj);
+    // console.log(obj);
 
     updateUser(obj)
       .then(() => {
@@ -28,6 +29,7 @@ const Profile = () => {
         setName("");
         setPhotoURL("");
         setSuccess("Profile updated successfully!");
+        toast.success("Profile updated Successfully !!");
       })
       .then((err) => {
         setError(err);
@@ -82,7 +84,7 @@ const Profile = () => {
             <FaUserEdit /> Update Profile
           </button>
           {success && <p className="text-success text-sm mt-2">{success}</p>}
-          {error && <p className="text-error text-sm mt-2">{success}</p>}
+          {error && <p className="text-error text-sm mt-2">{error}</p>}
         </form>
       </div>
     </div>
