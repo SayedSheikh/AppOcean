@@ -1,0 +1,180 @@
+[
+  {
+    "id": "game001",
+    "name": "Asphalt 9: Legends",
+    "developer": "Gameloft",
+    "thumbnail": "https://i.ibb.co.com/zTB5Q3yt/Ashpalt-9.jpg",
+    "banner": "https://i.ibb.co.com/zTB5Q3yt/Ashpalt-9.jpg",
+    "downloads": 100000000,
+    "category": "Games",
+    "rating": 4.7,
+    "description": "Asphalt 9: Legends delivers an adrenaline-pumping racing experience with real-world hypercars from top brands like Ferrari, Porsche, Lamborghini, and W Motors. Dive into breathtaking tracks, perform wild stunts, and race against players in real-time multiplayer. With console-quality graphics and touch or tilt controls, Asphalt 9 sets the standard for mobile racing games.",
+    "features": [
+      "Over 50 real-world hypercars",
+      "Dynamic weather and stunning environments",
+      "TouchDrive control system",
+      "Real-time multiplayer racing",
+      "Custom car upgrades and designs"
+    ],
+    "reviews": [
+      {
+        "user": "speedster99",
+        "rating": 5,
+        "comment": "Amazing graphics and gameplay!"
+      }
+    ]
+  },
+
+  {
+    "id": "gam152",
+    "name": "Among Us",
+    "developer": "Among Us Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-amongus.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-amongus.jpg",
+    "downloads": 210863939,
+    "category": "Games",
+    "rating": 4.6,
+    "description": "Among Us is a multiplayer party game of teamwork and betrayal. Play online or locally with friends as Crewmates or Impostors in a spaceship-themed social deduction game.",
+    "features": [
+      "Multiplayer gameplay with up to 15 players",
+      "Social deduction and strategy elements",
+      "Customizable characters and maps",
+      "Text and voice chat support",
+      "Cross-platform compatibility"
+    ],
+    "reviews": [
+      {
+        "user": "user_amo",
+        "rating": 4,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+
+  {
+    "id": "gam921",
+    "name": "Minecraft",
+    "developer": "Minecraft Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-minecraft.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-minecraft.jpg",
+    "downloads": 122576709,
+    "category": "Games",
+    "rating": 4.6,
+    "description": "Minecraft is a sandbox adventure game where players explore, build, and survive in infinite blocky worlds. Whether in Creative mode or Survival, the only limit is your imagination.",
+    "features": [
+      "Creative and Survival game modes",
+      "Multiplayer online servers and realms",
+      "Infinite world generation",
+      "Crafting, building, and mining mechanics",
+      "Mods and custom skins support"
+    ],
+    "reviews": [
+      {
+        "user": "user_min",
+        "rating": 5,
+        "comment": "Great app for games!"
+      }
+    ]
+  },
+
+  {
+    "id": "pro377",
+    "name": "Todoist",
+    "developer": "Todoist Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-todoist.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-todoist.jpg",
+    "downloads": 218485303,
+    "category": "Productivity",
+    "rating": 4.8,
+    "description": "Todoist is a powerful task manager that helps you organize your life, plan your day, and get things done efficiently. It’s perfect for both personal use and team collaboration.",
+    "features": [
+      "Task and project management with priorities",
+      "Recurring due dates and reminders",
+      "Collaboration with shared tasks",
+      "Labels, filters, and productivity tracking",
+      "Cross-platform support"
+    ],
+    "reviews": [
+      {
+        "user": "user_tod",
+        "rating": 4,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+
+  {
+    "id": "pro774",
+    "name": "Google Keep",
+    "developer": "Google Keep Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-googlekeep.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-googlekeep.jpg",
+    "downloads": 483454380,
+    "category": "Productivity",
+    "rating": 3.6,
+    "description": "Google Keep is a simple note-taking app that allows you to quickly jot down ideas, set reminders, and collaborate on shared notes in a clean and intuitive interface.",
+    "features": [
+      "Quick notes with text, lists, and voice input",
+      "Reminders and location-based alerts",
+      "Collaborative notes with sharing options",
+      "Color-coded organization",
+      "Google Drive integration"
+    ],
+    "reviews": [
+      {
+        "user": "user_goo",
+        "rating": 5,
+        "comment": "Great app for productivity!"
+      }
+    ]
+  },
+
+  {
+    "id": "hea858",
+    "name": "Samsung Health",
+    "developer": "Samsung Health Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-samsunghealth.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-samsunghealth.jpg",
+    "downloads": 426647251,
+    "category": "Health",
+    "rating": 3.7,
+    "description": "Samsung Health is an all-in-one fitness tracking app that allows users to monitor their daily activity, heart rate, sleep, and more. It offers personalized health insights, goal setting, and integration with a wide range of wearables.",
+    "features": [
+      "Step and activity tracking",
+      "Sleep and heart rate monitoring",
+      "Fitness challenges and goal setting"
+    ],
+    "reviews": [
+      {
+        "user": "user_sam",
+        "rating": 4,
+        "comment": "Great app for health!"
+      }
+    ]
+  },
+
+  {
+    "id": "edu617",
+    "name": "SoloLearn",
+    "developer": "SoloLearn Inc.",
+    "thumbnail": "https://i.ibb.co/placeholder/thumb-sololearn.jpg",
+    "banner": "https://i.ibb.co/placeholder/banner-sololearn.jpg",
+    "downloads": 309924038,
+    "category": "Education",
+    "rating": 3.9,
+    "description": "SoloLearn is a mobile-first coding platform that helps users learn programming through interactive lessons, coding challenges, and a global community of learners. With a gamified experience, users can master programming languages like Python, JavaScript, and C++ while having fun.",
+    "features": [
+      "Learn programming with interactive lessons",
+      "Join a global community for support and collaboration",
+      "Complete coding challenges to practice skills",
+      "Track progress and earn badges as you learn"
+    ],
+    "reviews": [
+      {
+        "user": "user_sol",
+        "rating": 4,
+        "comment": "Great app for education!"
+      }
+    ]
+  }
+]
