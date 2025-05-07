@@ -1,10 +1,11 @@
 import React, { use } from "react";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../../Contexts/AuthContext";
 import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, logout } = use(AuthContext);
+  const navigate = useNavigate();
   const handleLogout = () => {
     logout()
       .then(() => {
@@ -83,9 +84,11 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <div className="flex items-center">
+          <div
+            onClick={() => navigate("/")}
+            className="flex items-center cursor-pointer">
             <img className="size-[50px]" src="/logo.png" alt="" />
-            <a className="btn btn-ghost text-xl px-0">AppOcean</a>
+            <a className="font-bold text-2xl px-0">AppOcean</a>
           </div>
         </div>
         <div className="hidden lg:flex">

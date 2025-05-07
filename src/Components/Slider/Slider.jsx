@@ -38,8 +38,12 @@ const Slider = ({ trendingPromise }) => {
               }}
               className="w-full h-full p-[20px] md:p-[80px] lg:p-[100px] flex rounded-[8px]">
               <div className="relative text-white self-center space-y-[10px]">
-                <h1 className="font-bold md:text-3xl text-2xl">{item.name}</h1>
-                <p className="semi-bold text-balance">{item.features[0]}</p>
+                <h1 className="font-bold md:text-3xl text-2xl lg:text-5xl">
+                  {item.name}
+                </h1>
+                <p className="semi-bold text-balance text-base md:text-lg lg:text-xl mb-[10px] mt-[20px]">
+                  {item.features[0]}
+                </p>
 
                 <Link
                   to={`app/${item.id}`}

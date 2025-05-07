@@ -37,7 +37,7 @@ const Profile = () => {
       });
   };
   return (
-    <div className="min-h-[calc(100vh-115px)] mb-[70px]">
+    <div className="min-h-[calc(100vh-115px)] mb-[70px] w-11/12 mx-auto">
       <title>AppOcean | Profile</title>
 
       <div className="max-w-md mx-auto p-6 shadow-md rounded-xl bg-base-100 mt-10 shadow-primary border-primary border">
