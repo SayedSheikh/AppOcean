@@ -8,11 +8,11 @@ const TopCard = ({ item }) => {
     <div
       onClick={() => navigate(`app/${item.id}`)}
       style={{
-        backgroundImage: `linear-gradient(-300deg, rgba(10, 10, 10,.80) 0%, rgba(17, 17, 17, 0.00) 100%), url('https://r4.wallpaperflare.com/wallpaper/214/187/691/video-games-video-game-art-ultrawide-ultra-wide-need-for-speed-heat-hd-wallpaper-dfd5229ceea65cbbc5ec4882f161d4f4.jpg')`,
+        backgroundImage: `linear-gradient(-300deg, rgba(1, 1, 1) 0%, rgba(17, 17, 17, 0.00) 100%), url(${item.banner})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="h-full rounded-[10px] p-[20px] pb-[10px] flex flex-col justify-end space-y-[5px]">
+      className="h-full rounded-[10px] p-[20px] pb-[10px] flex flex-col justify-end space-y-[5px] cursor-pointer hover:scale-[1.02] transition-all hover:border-sm hover:border border-primary">
       <p className=" text-[#CDD0D4] font-bold">{item.name}</p>
       <div className="flex items-center gap-1 text-orange-400 mt-[5px]">
         {Array.from({ length: 5 }, (_, i) => (

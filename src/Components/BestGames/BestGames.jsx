@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaStar } from "react-icons/fa";
+import { FaDownload, FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router";
 
 const BestGames = ({ games }) => {
@@ -21,11 +21,11 @@ const BestGames = ({ games }) => {
             onClick={() => navigate(`app/${item.id}`)}
             key={item.id}
             style={{
-              backgroundImage: `linear-gradient(-300deg, rgba(10, 10, 10,.80) 0%, rgba(17, 17, 17, 0.00) 100%), url('https://r4.wallpaperflare.com/wallpaper/214/187/691/video-games-video-game-art-ultrawide-ultra-wide-need-for-speed-heat-hd-wallpaper-dfd5229ceea65cbbc5ec4882f161d4f4.jpg')`,
+              backgroundImage: `linear-gradient(-300deg, rgba(1, 1, 1) 0%, rgba(17, 17, 17, 0.00) 100%), url(${item.banner})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-            className="h-[300px] rounded-[10px] p-[20px] pb-[10px] flex flex-col justify-end space-y-[5px]">
+            className="h-[300px] rounded-[10px] p-[20px] pb-[10px] flex flex-col justify-end space-y-[5px] cursor-pointer hover:scale-[1.05] transition-all hover:border hover:border-primary">
             <p className="max-w-[102px] text-[#CDD0D4] font-bold">
               {item.name}
             </p>
@@ -41,9 +41,10 @@ const BestGames = ({ games }) => {
                 ({item.rating})
               </span>
             </div>
-            <p className="text-[12px] font-semibold ">
+            <p className="text-[13px] font-semibold flex items-center">
               {" "}
-              Downloads : {item.downloads.toLocaleString()}
+              <FaDownload className="inline mr-1"></FaDownload>{" "}
+              {item.downloads.toLocaleString()}
             </p>
             <p className="bg-[#1e293b] text-white text-[12px] w-fit px-[15px] py-[5px] rounded-[5px] my-[10px] self-end cursor-pointer">
               Free
