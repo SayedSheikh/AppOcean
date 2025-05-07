@@ -9,6 +9,7 @@ import Login from "../Components/Login/Login";
 import Registration from "../Pages/Registration";
 import Profile from "../Pages/Profile";
 import PrivateRoute from "../Pages/PrivateRoute";
+import Loader from "../Components/Loader/Loader";
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,12 @@ const router = createBrowserRouter([
         index: true,
         loader: () => fetch("/data.json"),
         Component: Home,
-        hydrateFallbackElement: <p>loading...</p>,
+        hydrateFallbackElement: <Loader></Loader>,
       },
       {
         path: "app/:id",
         loader: () => fetch("/data.json"),
-        hydrateFallbackElement: <p>loading...</p>,
+        hydrateFallbackElement: <Loader></Loader>,
         element: (
           <PrivateRoute>
             <AppDetails />
