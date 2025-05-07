@@ -13,21 +13,25 @@ import { auth } from "../Components/FireBase/Firebase.init";
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const provider = new GoogleAuthProvider();
 
   const googleSignIn = () => {
+    setLoading(true);
     return signInWithPopup(auth, provider);
   };
 
   const signUp = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const signIn = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const updateUser = (obj) => {
+  const updateUser = ({ ...obj }) => {
     return updateProfile(auth.currentUser, obj);
   };
 
@@ -43,11 +47,13 @@ const AuthProvider = ({ children }) => {
     updateUser,
     logout,
     googleSignIn,
+    loading,
   };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setLoading(false);
     });
     return () => {
       unsubscribe();

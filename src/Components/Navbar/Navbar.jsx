@@ -1,7 +1,18 @@
-import React from "react";
-import { NavLink } from "react-router";
+import React, { use } from "react";
+import { Link, NavLink } from "react-router";
+import { AuthContext } from "../../Contexts/AuthContext";
 
 const Navbar = () => {
+  const { user, logout } = use(AuthContext);
+  const handleLogout = () => {
+    logout()
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   const links = (
     <>
       <li className="w-20">
@@ -41,8 +52,8 @@ const Navbar = () => {
   );
   return (
     <div className="sticky top-0 z-10 backdrop-blur-md shadow-sm shadow-primary">
-      <div className="navbar bg-transparent  max-w-[1200px]  mb-[50px]  w-11/12 mx-auto px-0">
-        <div className="navbar-start">
+      <div className="navbar justify-between bg-transparent  max-w-[1200px]  mb-[50px]  w-11/12 mx-auto px-0">
+        <div className="flex items-center">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -71,11 +82,37 @@ const Navbar = () => {
             <a className="btn btn-ghost text-xl px-0">AppOcean</a>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn btn-primary btn-outline rounded-[5px]">login</a>
+        <div className="flex gap-3 items-center">
+          {user && (
+            <div className="relative">
+              <img
+                src={user?.photoURL}
+                alt="User"
+                className="w-7 h-7 rounded-full mx-auto cursor-pointer peer hover:border"
+              />
+              <div className="text-[12px] text-white p-2 rounded-[8px] absolute top-[35px] -left-[135px] bg-[#44577f] opacity-0 peer-hover:opacity-100 transition-opacity duration-200">
+                <p>{user?.displayName}</p>
+                <p>{user?.email}</p>
+              </div>
+            </div>
+          )}
+
+          {user ? (
+            <a
+              onClick={handleLogout}
+              className="btn btn-primary btn-outline rounded-[5px]">
+              logout
+            </a>
+          ) : (
+            <Link
+              to="/login"
+              className="btn btn-primary btn-outline rounded-[5px]">
+              login
+            </Link>
+          )}
         </div>
       </div>
     </div>

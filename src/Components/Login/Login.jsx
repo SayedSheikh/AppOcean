@@ -1,9 +1,10 @@
 import React, { use, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../../Contexts/AuthContext";
 
 const Login = () => {
   const { signIn, googleSignIn } = use(AuthContext);
+  const navigate = useNavigate();
 
   const [error, setError] = useState("");
   const handleSubmit = (e) => {
@@ -18,6 +19,7 @@ const Login = () => {
     signIn(email, password)
       .then((res) => {
         console.log(res.json);
+        navigate("/");
       })
       .catch((err) => {
         setError(err.code.slice(5));
@@ -28,6 +30,7 @@ const Login = () => {
     googleSignIn()
       .then((res) => {
         console.log(res);
+        navigate("/");
       })
       .catch((err) => {
         console.log(err);
