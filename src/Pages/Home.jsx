@@ -27,6 +27,8 @@ const Home = () => {
   }, [data]);
   return (
     <div className="min-h-[calc(100vh-65px)] z-0">
+      <title>AppOcean | Home</title>
+
       <Slider></Slider>
       <BestGames games={games}></BestGames>
       <TopApps apps={data}></TopApps>

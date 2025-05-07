@@ -24,11 +24,11 @@ const ForgetPassword = () => {
     // }
 
     resetPassword(email)
-      .then((res) => {
+      .then(() => {
         setEmail("");
         setSuccess("Password reset mail has been sent to your mail");
         toast.success("Password reset mail has been sent");
-        console.log(res);
+        // console.log(res);
       })
       .catch((err) => {
         setError(err.code.slice(5));
@@ -39,6 +39,8 @@ const ForgetPassword = () => {
   };
   return (
     <div className="min-h-[calc(100vh-115px)] mb-[70px]">
+      <title>AppOcean | Forget Password</title>
+
       <div className="max-w-md mx-auto p-6 shadow-md rounded-xl bg-base-100 mt-10 shadow-primary border-primary border">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>

@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
-import Navbar from "../Components/Navbar/Navbar";
 
 const Error = () => {
   return (
     <div className="w-full h-screen bg-[#fff]">
+      <title>AppOcean | 404 Not Found</title>
+
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh - 95px)] bg-white px-4 text-center">
         <img
           src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif"

@@ -54,7 +54,7 @@ const AppDetails = () => {
   // console.log(name);
   return (
     <div className="min-h-[calc(100vh-115px)] w-11/12 mx-auto max-w-[1200px] space-y-6 mb-[100px]">
-      {/* Banner */}
+      <title>AppOcean | AppDetails</title>
       <div className="w-full h-64 rounded-2xl overflow-hidden">
         <img
           src={app.banner}

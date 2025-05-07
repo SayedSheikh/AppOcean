@@ -4,6 +4,8 @@ import { FaStore, FaMobileAlt, FaShieldAlt } from "react-icons/fa";
 const AboutUs = () => {
   return (
     <div className="min-h-[calc(100vh-115px)] max-w-[1200px] w-11/12 mx-auto py-10 space-y-8">
+      <title>AppOcean | AbouUs</title>
+
       <h1 className="text-4xl font-bold text-center">About Our App Store</h1>
       <p className="text-lg text-gray-300 text-center">
         Welcome to our app store — your gateway to discovering and installing

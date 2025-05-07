@@ -69,6 +69,8 @@ const Registration = () => {
   };
   return (
     <div className="min-h-[calc(100vh-115px)] w-11/12 mx-auto mb-[70px]">
+      <title>AppOcean | Registration</title>
+
       <div className="card bg-[#39455f6d] w-full mx-auto max-w-sm shrink-0 shadow-sm shadow-primary">
         <div className="card-body">
           <h1 className="text-5xl font-bold">SignUp now!</h1>
