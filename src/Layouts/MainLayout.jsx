@@ -9,7 +9,7 @@ const MainLayout = () => {
   const navigation = useNavigation();
 
   return (
-    <div>
+    <div className="font-roboto">
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="min-h-[calc(100vh-115px)]">
