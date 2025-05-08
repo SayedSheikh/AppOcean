@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Contexts/AuthContext";
 import toast from "react-hot-toast";
@@ -9,9 +9,23 @@ const Login = () => {
   const location = useLocation();
 
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (location.state === "/profile") {
+      toast("LogIn first to see your profile !!", {
+        duration: 4000,
+      });
+    } else if (location.state) {
+      toast("LogIn first to see app details !!", {
+        duration: 4000,
+      });
+    }
+  }, [location.state]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     const email = e.target.email.value;
     const password = e.target.password.value;
     // console.log(email, password);
@@ -22,9 +36,11 @@ const Login = () => {
       .then(() => {
         // console.log(res.json);
         navigate("/");
+        setLoading(false);
         toast.success("Logged In !!");
       })
       .catch((err) => {
+        setLoading(false);
         setError(err.code.slice(5));
         toast.error(err.code.slice(5));
       });
@@ -34,6 +50,7 @@ const Login = () => {
     googleSignIn()
       .then(() => {
         // console.log(res);
+        setLoading(false);
         navigate(location.state || "/");
         toast.success("Logged In !!");
       })
@@ -73,8 +90,11 @@ const Login = () => {
               </Link>
             </div>
             {error && <p className="text-red-400">{error}</p>}
-            <button type="submit" className="btn mt-4 mb-2">
+            <button type="submit" className="btn mt-4 mb-2 text-primary">
               Login
+              {loading && (
+                <span class="loading loading-spinner text-primary ml-[4px] "></span>
+              )}
             </button>
             <button
               onClick={handleGoogleSignIn}

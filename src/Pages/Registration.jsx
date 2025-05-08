@@ -8,6 +8,7 @@ const Registration = () => {
 
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,9 +34,12 @@ const Registration = () => {
       return;
     }
 
+    setLoading(true);
+
     signUp(email, password)
       .then(() => {
         // console.log(res);
+        setLoading(false);
         updateUser({
           displayName: name,
           photoURL: url,
@@ -46,11 +50,13 @@ const Registration = () => {
             navigate("/");
           })
           .catch((err) => {
+            setLoading(false);
             setError(err.code.slice(5));
             toast.error(`${err.code.slice(5)} !!`);
           });
       })
       .catch((err) => {
+        setLoading(false);
         setError(err.code.slice(5));
         toast.error(`${err.code.slice(5)} !!`);
       });
@@ -60,6 +66,7 @@ const Registration = () => {
     googleSignIn()
       .then(() => {
         // console.log(res);
+        setLoading(false);
         toast.success("Registration Successful !!");
       })
       .catch((err) => {
@@ -109,8 +116,13 @@ const Registration = () => {
             />
 
             {error && <p className="text-red-400">{error}</p>}
-            <button type="submit" className="btn mt-4 mb-2">
-              Login
+            <button
+              type="submit"
+              className="btn mt-4 mb-2 text-primary text-center">
+              SignUp
+              {loading && (
+                <span class="loading loading-spinner text-primary ml-[4px]"></span>
+              )}
             </button>
             {/* Google */}
             <button
