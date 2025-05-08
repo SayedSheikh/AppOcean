@@ -3,6 +3,7 @@ import React from "react";
 const TermsOfService = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 w-11/12">
+      <title>AppOcean | Terms</title>
       <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
       <p className="mb-4">
         Welcome to AppOcean! By accessing or using our app store, you agree to

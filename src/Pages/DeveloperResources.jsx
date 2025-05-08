@@ -5,6 +5,7 @@ import { Link } from "react-router";
 const DeveloperResources = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 text-white">
+      <title>AppOcean | Developer</title>
       <h1 className="text-3xl font-bold mb-6">Developer Resources</h1>
 
       <section className="mb-8">
