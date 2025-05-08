@@ -4,18 +4,22 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-black text-white rounded p-10">
-      <nav className="grid grid-flow-col gap-4">
-        <Link to="/" className="link link-hover">
-          Apps
+    <footer className="footer footer-horizontal footer-center bg-black text-white rounded p-10 mt-10">
+      <div className="flex flex-col md:flex-row gap-4 text-sm text-center md:text-left">
+        <Link to="/terms" className="link link-hover">
+          Terms of Service
         </Link>
-        <Link to="/profile" className="link link-hover">
-          Profile
+        <Link to="/privacy" className="link link-hover">
+          Privacy Policy
+        </Link>
+        <Link to="/developer-resources" className="link link-hover">
+          Developer Resources
         </Link>
         <Link to="/aboutus" className="link link-hover">
-          AboutUs
+          About Us
         </Link>
-      </nav>
+      </div>
+
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a href="https://github.com/SayedSheikh" target="_blank">

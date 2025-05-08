@@ -11,6 +11,9 @@ import Profile from "../Pages/Profile";
 import PrivateRoute from "../Pages/PrivateRoute";
 import Loader from "../Components/Loader/Loader";
 import ForgetPassword from "../Pages/ForgetPassword";
+import TermsOfService from "../Pages/TermsOfService";
+import PrivacyPolicy from "../Pages/PrivacyPolicy";
+import DeveloperResources from "../Pages/DeveloperResources";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +64,18 @@ const router = createBrowserRouter([
       {
         path: "forgetPassword",
         element: <ForgetPassword></ForgetPassword>,
+      },
+      {
+        path: "terms",
+        Component: TermsOfService,
+      },
+      {
+        path: "privacy",
+        Component: PrivacyPolicy,
+      },
+      {
+        path: "developer-resources",
+        Component: DeveloperResources,
       },
     ],
   },
